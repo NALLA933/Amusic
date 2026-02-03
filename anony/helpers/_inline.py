@@ -152,7 +152,7 @@ class Inline:
             rows += [
                 [
                     self.ikb(
-                        text=lang["Power By"],
+                        text=lang["Owner"],
                         url="https://t.me/Senpai_Waifu_Grabbing_Bot?start=_tgr_1tTPLUQwNjI1",
                     )
                 ]
