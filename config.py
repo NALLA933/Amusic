@@ -5,29 +5,29 @@ load_dotenv()
 
 class Config:
     def __init__(self):
-        self.API_ID = int(getenv("API_ID", 35660683))
-        self.API_HASH = getenv("API_HASH", "7afb42cd73fb5f3501062ffa6a1f87f7")
+        self.API_ID = int(getenv("API_ID", 0))
+        self.API_HASH = getenv("API_HASH")
 
-        self.BOT_TOKEN = getenv("BOT_TOKEN", "8403356754:AAG0Y3kj8Zm4xPV-kOa-6hvpbkDemIiBdI8")
-        self.MONGO_URL = getenv("MONGO_URL", "mongodb+srv://public:abishnoimf@cluster0.rqk6ihd.mongodb.net/?retryWrites=true&w=majority")
+        self.BOT_TOKEN = getenv("BOT_TOKEN")
+        self.MONGO_URL = getenv("MONGO_URL")
 
-        self.LOGGER_ID = int(getenv("LOGGER_ID", -1002059929123))
-        self.OWNER_ID = int(getenv("OWNER_ID", 7818323042))
+        self.LOGGER_ID = int(getenv("LOGGER_ID", 0))
+        self.OWNER_ID = int(getenv("OWNER_ID", 0))
 
         self.DURATION_LIMIT = int(getenv("DURATION_LIMIT", 60)) * 60
         self.QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", 20))
         self.PLAYLIST_LIMIT = int(getenv("PLAYLIST_LIMIT", 20))
 
-        self.SESSION1 = getenv("SESSION", "BQFLMyQASmxnF38miJivcan0D3xVnpECrkXM3kYmBKpCpPmUVO-KnP7_f_BrELkri1y-2BH8DpP3-SG6V0hvxdEfNvxsjQ740SoG-y5Dn4fQRpvVzsQGTrpglay5JezYqOHg3MqRpCpTcijV6vwaJJC0CRKPFiAGT7XeY8mPpwbkE729tewi7OOr53xEZrV8TbH27Asd1OLbZpGNWRODHEJyZE29Id6wtA6j7B-pLFUnDqldQJ4BpsDLihErX3OJGM8CSwJppJMnLYB9tTtKidMiLnkWGLDonfVsNcF_DUz2jWUgAD6JE9y4rX2iUmgi1Cv4ZAagqeJrjG47gAUVkZh1TDEbuQAAAAH17fm7AA")
+        self.SESSION1 = getenv("SESSION", None)
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
-        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Senpai_Updates")
-        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/THE_DRAGON_SUPPORT")
+        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
+        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
 
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "true"
         self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "true"
-    
+
         self.THUMB_GEN: bool = getenv("THUMB_GEN", "True").lower() == "true"
         self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", "True").lower() == "true"
 
